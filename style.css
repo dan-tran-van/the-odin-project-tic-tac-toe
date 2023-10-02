@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Display controller */
+
+#display-controller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  inline-size: 50vh;
+  gap: 1em;
+  padding-block: 1em;
+}
+
+
+#game-info {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  inline-size: 100%;
+  gap: 1em;
+}
+
+#game-info > span:not([id='game-state']){
+  flex: 1;
+  text-align: center;
+  padding: 1em;
+}
+
+
+/* Game board */
+
+#game-board {
+  display: grid;
+  block-size: 50vh;
+  inline-size: 50vh;
+  grid-auto-rows: 1fr;
+  gap: 1em;
+  padding: 1em;
+}
+
+.game-board-spot {
+  background-color: paleturquoise;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
